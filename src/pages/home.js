@@ -1,5 +1,6 @@
 export function pageLoad(content){
     //const content = document.getElementById('content');
+    const main = document.createElement('main');
     const pageTitle = document.createElement('h1');
     const description = document.createElement('p');
     const image = document.createElement('img');
@@ -11,7 +12,8 @@ export function pageLoad(content){
     image.src = "https://steamuserimages-a.akamaihd.net/ugc/788632137952739176/8B1BD7371460AF8F0C08B7DC67B53A70476C06B9/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false";
     image.style = "width: 400px";
 
-    content.appendChild(pageTitle);
-    content.appendChild(description);
-    content.appendChild(image);
+    main.appendChild(pageTitle);
+    main.appendChild(description);
+    main.appendChild(image);
+    content.appendChild(main);
 }

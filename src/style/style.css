@@ -42,7 +42,8 @@ body{
     cursor: pointer;
 
     border: 3px solid var(--color-jet-stream);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom: none;
 }
 
@@ -58,10 +59,31 @@ body{
     cursor: pointer;
 
     border: 3px solid var(--color-jet-stream);
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     border-bottom: none;
 }
 
 .header__pages-active:hover {
     text-decoration: underline;
+}
+
+main h1{
+    margin-top: 0;
+}
+
+main {
+    width: 1000px;
+    margin: 10px auto 0px auto;
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-white-chocolate);
+
+    border-radius: 100px;
 }

@@ -8,3 +8,10 @@ document.body.onload = function(){
     headerLoad(content, "home");
     homeLoad(content);
 };
+
+/*
+document.body.onload = function(){ 
+    headerLoad(content, "menu");
+    menuLoad(content);
+};
+*/
