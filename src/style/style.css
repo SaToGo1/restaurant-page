@@ -25,3 +25,43 @@ body{
     background-color: var(--color-white-chocolate);
     height: 50px;
 }
+
+.header__nav {
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    gap: 30px;
+}
+
+.header__pages{
+    margin-top: 5px;
+    padding: 10px 30px;
+
+    cursor: pointer;
+
+    border: 3px solid var(--color-jet-stream);
+    border-radius: 10px;
+    border-bottom: none;
+}
+
+.header__pages:hover {
+    text-decoration: underline;
+}
+
+.header__pages-active{
+    margin-top: 5px;
+    padding: 10px 30px;
+    background-color: var(--color-jet-stream);
+
+    cursor: pointer;
+
+    border: 3px solid var(--color-jet-stream);
+    border-radius: 10px;
+    border-bottom: none;
+}
+
+.header__pages-active:hover {
+    text-decoration: underline;
+}
