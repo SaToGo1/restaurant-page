@@ -1,7 +1,11 @@
-import { PageLoad as HomeLoad } from "./page/home.js";
+import "./style/style.css";
+import { pageLoad as homeLoad } from "./pages/home.js";
+import { headerLoad } from "./pages/header.js";
 
 const content = document.getElementById('content');
+const body = document.getElementsByTagName('body');
 
 document.body.onload = function(){ 
-    HomeLoad(content); 
+    headerLoad(content);
+    homeLoad(content);
 };

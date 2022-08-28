@@ -1,0 +1,27 @@
+:root {
+	--color-dark-brown2: #241b19;
+	--color-dark-brown1: #553a34;
+	--color-neutral-brown: #6b4c4c;
+	--color-light-brown1: #8f6b64;
+	--color-light-brown2: #bc9072;
+
+    --color-jet-stream: #C5DBC8;
+    --color-white-chocolate: #ECE9D2;
+    --color-pale-silver: #D5C5B5;
+    --color-tuscany: #B89E97;
+}
+
+body{
+    height: 100vh;
+    background-color: var(--color-jet-stream);
+    margin: 0;
+}
+
+.title {
+    color: var(--color-dark-brown1);
+}
+
+.header {
+    background-color: var(--color-white-chocolate);
+    height: 50px;
+}
