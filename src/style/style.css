@@ -1,14 +1,14 @@
 :root {
-	--color-dark-brown2: #241b19;
+	/* --color-dark-brown2: #241b19; */
 	--color-dark-brown1: #553a34;
-	--color-neutral-brown: #6b4c4c;
+	/* --color-neutral-brown: #6b4c4c;
 	--color-light-brown1: #8f6b64;
-	--color-light-brown2: #bc9072;
+	--color-light-brown2: #bc9072; */
 
     --color-jet-stream: #C5DBC8;
     --color-white-chocolate: #ECE9D2;
-    --color-pale-silver: #D5C5B5;
-    --color-tuscany: #B89E97;
+    /* --color-pale-silver: #D5C5B5;
+    --color-tuscany: #B89E97; */
 }
 
 body{
@@ -22,13 +22,12 @@ main h1{
 }
 
 main {
-    width: 1000px;
+    width: 600px;
     margin: 10px auto 0px auto;
-    padding: 30px;
+    padding: 30px 200px 30px 200px;
     
     display: flex;
     flex-direction: column;
-    
     justify-content: center;
     align-items: center;
 

@@ -2,6 +2,7 @@ import "./style/style.css";
 import { pageLoad as homeLoad } from "./pages/home.js";
 import { headerLoad , changeHeader } from "./pages/header.js";
 import { coffeeLoad } from "./pages/coffee.js";
+import { contactLoad } from "./pages/contact.js";
 
 const content = document.getElementById('content');
 
@@ -28,11 +29,7 @@ headerCoffee.addEventListener('click', function(){
 headerContact.addEventListener('click', function(){
     erasePage();
     changeHeader("contact");
-
-    // Temporal code so page doesn't throw an error.
-    const main = document.createElement('main');
-    main.id = "main";
-    content.appendChild(main);
+    contactLoad(content);
 })
 
 function erasePage(){
