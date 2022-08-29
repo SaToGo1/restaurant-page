@@ -17,6 +17,26 @@ body{
     margin: 0;
 }
 
+main h1{
+    margin-top: 0;
+}
+
+main {
+    width: 1000px;
+    margin: 10px auto 0px auto;
+    padding: 30px;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-white-chocolate);
+
+    border-radius: 100px;
+}
+
 .title {
     color: var(--color-dark-brown1);
 }
@@ -68,22 +88,6 @@ body{
     text-decoration: underline;
 }
 
-main h1{
-    margin-top: 0;
-}
-
-main {
-    width: 1000px;
-    margin: 10px auto 0px auto;
-    padding: 30px;
-    
-    display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--color-white-chocolate);
-
-    border-radius: 100px;
+.coffee__img{
+    width: 400px;
 }

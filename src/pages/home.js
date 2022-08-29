@@ -1,5 +1,5 @@
 export function pageLoad(content){
-    //const content = document.getElementById('content');
+
     const main = document.createElement('main');
     const pageTitle = document.createElement('h1');
     const description = document.createElement('p');
