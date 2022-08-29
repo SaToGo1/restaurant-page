@@ -10,22 +10,25 @@ export function headerLoad (content, page) {
 
     //Set up of the tabs
     home.textContent = "Home";
-    home.className = "header__pages";
     home.id = "header__home"
     coffee.textContent = "Coffee";
-    coffee.className = "header__pages";
     coffee.id = "header__coffee"
     contact.textContent = "Contact";
-    contact.className = "header__pages";
     contact.id = "header__contact"
 
     //Mark which tab is open with different style.
     if(page === "home"){
         home.className = "header__pages-active";
+        coffee.className = "header__pages";
+        contact.className = "header__pages";
     } else if(page === "coffee") {
         coffee.className = "header__pages-active";
+        home.className = "header__pages";
+        contact.className = "header__pages";
     } else {
         contact.className = "header__pages-active";
+        home.className = "header__pages";
+        coffee.className = "header__pages";
     }
 
     //Add content to the page.
@@ -34,4 +37,25 @@ export function headerLoad (content, page) {
     nav.appendChild(contact);
     header.appendChild(nav);
     content.appendChild(header);
+}
+
+export function changeHeader(page) {
+    const home = document.getElementById('header__home');
+    const coffee = document.getElementById('header__coffee');
+    const contact = document.getElementById('header__contact');
+
+    //Mark which tab is open with different style.
+    if(page === "home"){
+        home.className = "header__pages-active";
+        coffee.className = "header__pages";
+        contact.className = "header__pages";
+    } else if(page === "coffee") {
+        coffee.className = "header__pages-active";
+        home.className = "header__pages";
+        contact.className = "header__pages";
+    } else {
+        contact.className = "header__pages-active";
+        home.className = "header__pages";
+        coffee.className = "header__pages";
+    }
 }

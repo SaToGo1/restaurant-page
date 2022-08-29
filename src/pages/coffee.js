@@ -14,6 +14,7 @@ export function coffeeLoad(content) {
 
     //Coffee3 Creation
 
+    main.id = "main";
     main.appendChild(pageTitle);
     main.appendChild(coffee1);
     content.appendChild(main);

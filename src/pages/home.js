@@ -12,6 +12,7 @@ export function pageLoad(content){
     image.src = "https://steamuserimages-a.akamaihd.net/ugc/788632137952739176/8B1BD7371460AF8F0C08B7DC67B53A70476C06B9/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false";
     image.style = "width: 400px";
 
+    main.id = "main";
     main.appendChild(pageTitle);
     main.appendChild(description);
     main.appendChild(image);
