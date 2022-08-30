@@ -90,3 +90,30 @@ main {
 .coffee__img{
     width: 400px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 9px 10% 9px 10%;
+
+    height: 32px;
+
+    background-color: var(--color-white-chocolate);
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.footer_gitHubLink {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.footer__art {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
