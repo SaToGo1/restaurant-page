@@ -13,12 +13,27 @@
     --color-tuscany: #B89E97; */
 }
 
+html{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/022/520/876/large/bogdan-mb0sco-coffee-shop-snow-hdpreview.jpg?1584925104);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: 'Yusei Magic', sans-serif;
+    overflow-x: hidden;
+}
+
+
 body{
-    height: 100vh;
-    background-color: var(--color-jet-stream);
+    min-height: 100vh;
     margin: 0;
 }
 
+#content {
+    min-height: 90vh;
+    position: relative;
+    padding-bottom: 10vh;
+}
 /**************
 * SECTIONS    *
 *             *
@@ -29,8 +44,8 @@ main h1{
 
 main {
     width: 600px;
-    margin: 20px auto 70px auto;
-    padding: 30px 200px 30px 200px;
+    margin: 70px auto 0px auto;
+    padding: 30px 200px 50px 200px;
 
     
     display: flex;
@@ -178,11 +193,12 @@ main {
 *           *
 *************/
 .footer {
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    bottom: 0px;
     left: 0;
     right: 0;
     padding: 9px 10% 9px 10%;
+    margin-top: 10px;
 
     height: 32px;
 

@@ -14,6 +14,7 @@ export function footerLoad (content) {
     const artLink3 = document.createElement('a');
 
     footer.className = "footer";
+    footer.id = "footer";
 
     div1.className = "footer__page";
     div2.className = "footer__art";

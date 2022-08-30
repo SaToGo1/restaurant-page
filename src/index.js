@@ -20,21 +20,26 @@ headerHome.addEventListener('click', function() {
     erasePage();
     changeHeader("home");
     homeLoad(content);
+    footerLoad(content);
 });
 
 headerCoffee.addEventListener('click', function(){
     erasePage();
     changeHeader("coffee");
     coffeeLoad(content);
+    footerLoad(content);
 })
 
 headerContact.addEventListener('click', function(){
     erasePage();
     changeHeader("contact");
     contactLoad(content);
+    footerLoad(content);
 })
 
 function erasePage(){
     const main = document.getElementById('main');
+    const footer = document.getElementById('footer');
     content.removeChild(main);
+    content.removeChild(footer);
 }
