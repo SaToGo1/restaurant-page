@@ -190,6 +190,7 @@ main {
 
     display: flex;
     align-items: flex-end;
+    gap: 30px;
 }
 
 .footer_gitHubLink {
