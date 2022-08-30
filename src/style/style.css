@@ -5,8 +5,10 @@
 	--color-light-brown1: #8f6b64;
 	--color-light-brown2: #bc9072; */
 
+    --color-brown2: #C19450;
     --color-jet-stream: #C5DBC8;
     --color-white-chocolate: #ECE9D2;
+    --color-white-chocolate-variation: #ECD9C2;
     /* --color-pale-silver: #D5C5B5;
     --color-tuscany: #B89E97; */
 }
@@ -17,29 +19,113 @@ body{
     margin: 0;
 }
 
+/**************
+* SECTIONS    *
+*             *
+***************/
 main h1{
     margin-top: 0;
 }
 
 main {
     width: 600px;
-    margin: 10px auto 0px auto;
+    margin: 20px auto 70px auto;
     padding: 30px 200px 30px 200px;
+
     
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
 
     background-color: var(--color-white-chocolate);
 
     border-radius: 100px;
 }
 
+
 .title {
     color: var(--color-dark-brown1);
+    margin: 0;
 }
 
+.titleDiv {
+    background-color: var(--color-jet-stream);
+    padding: 10px 30px;
+    border: 1px solid var(--color-brown2);
+    border-radius: 50%;
+}
+
+.coffee__img{
+    width: 400px;
+}
+
+.card {
+    background-color: var(--color-white-chocolate-variation);
+    border-left: 3px solid black;
+    padding: 10px 20px 10px 20px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.coffee__card {
+    background-color: var(--color-white-chocolate-variation);
+    border-left: 3px solid black;
+    padding: 10px 20px 10px 20px;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+
+    width: 500px;
+}
+
+.home__img {
+    width: 400px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.contact__Contact-Information {
+    margin-top: 30px;
+    border: 3px solid var(--color-brown2);
+    padding: 10px 20px 10px 20px;
+
+    display: grid;
+    grid-template-columns: 290px 20px 290px;
+    grid-template-rows: 100px 100px;
+    grid-template-areas: 
+    "contactTitle . SocialNetworkTitle"
+    "contact . socialNetwork";
+    
+}
+
+.contact__Icon {
+    width: 40px;
+}
+
+.contact__icon-text{
+    display: flex;
+}
+
+.contact__phone-mail {
+    grid-area: contact;
+}
+
+.contact__social-network{
+    grid-area: SocialNetworkTitle;
+}
+
+.contact__social-network-div{
+    grid-area: socialNetwork;
+}
+
+/************
+* HEADER    *
+*           *
+*************/
 .header {
     background-color: var(--color-white-chocolate);
     height: 50px;
@@ -87,10 +173,10 @@ main {
     text-decoration: underline;
 }
 
-.coffee__img{
-    width: 400px;
-}
-
+/************
+* FOOTER    *
+*           *
+*************/
 .footer {
     position: fixed;
     bottom: 0;
@@ -110,6 +196,10 @@ main {
     display: flex;
     align-items: center;
     height: 32px;
+    gap: 10px;
+
+    text-decoration: none;
+    color: #000;
 }
 
 .footer__art {
